@@ -1,6 +1,7 @@
 package gh.funthomas424242.validation.beanvalidation;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.util.Iterator;
 import java.util.Set;
@@ -34,8 +35,16 @@ public class PersonTest {
 		assertEquals(2, constraintViolations.size());
 		final Iterator<ConstraintViolation<Person>> it = constraintViolations
 				.iterator();
-		assertEquals("name not null", it.next().getMessage());
-		assertEquals("vorname not null", it.next().getMessage());
+		assertTrue(isNameOrVornameNotNullMessage(it.next().getMessage()));
+		assertTrue(isNameOrVornameNotNullMessage(it.next().getMessage()));
+	}
+
+	private static boolean isNameOrVornameNotNullMessage(final String message) {
+		if ("name not null".equals(message))
+			return true;
+		if ("vorname not null".equals(message))
+			return true;
+		return false;
 	}
 
 	@Test
