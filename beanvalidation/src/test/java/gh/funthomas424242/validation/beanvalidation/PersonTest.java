@@ -25,7 +25,7 @@ public class PersonTest {
 	}
 
 	@Test
-	public void testIvalidPerson() {
+	public void testInvalidPerson() {
 		final Person person = new Person();
 
 		final Set<ConstraintViolation<Person>> constraintViolations = validator
@@ -34,8 +34,8 @@ public class PersonTest {
 		assertEquals(2, constraintViolations.size());
 		final Iterator<ConstraintViolation<Person>> it = constraintViolations
 				.iterator();
-		assertEquals("vorname", it.next().getPropertyPath().toString());
-		assertEquals("name", it.next().getPropertyPath().toString());
+		assertEquals("name not null", it.next().getMessage());
+		assertEquals("vorname not null", it.next().getMessage());
 	}
 
 	@Test

@@ -6,10 +6,10 @@ import javax.validation.constraints.NotNull;
 
 public class Person {
 
-	@NotNull
+	@NotNull(message = "name not null")
 	protected String name;
 
-	@NotNull
+	@NotNull(message = "vorname not null")
 	protected String vorname;
 
 	protected Date geburtsdatum;
