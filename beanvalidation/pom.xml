@@ -4,8 +4,8 @@
 	<groupId>gh.funthomas424242</groupId>
 	<artifactId>beanvalidation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Algorithmen Example</name>
-	<description>Einfache Algorithmen mit simplen Beispielen</description>
+	<name>Bean Validation Example</name>
+	<description>Einfache Beispiele zum Bean Validation Framework</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

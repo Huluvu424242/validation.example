@@ -11,7 +11,7 @@
 
 	<artifactId>checkerframework</artifactId>
 	<name>Checker Framework</name>
-	<description>Einfache Beispiele</description>
+	<description>Einfache Beispiele zum Checkerframework</description>
 
 
 	<properties>

@@ -5,7 +5,7 @@
 	<artifactId>validation.example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Validation Example</name>
-	<description>Einfache Algorithmen mit simplen Beispielen</description>
+	<description>Einfache Beispiele zu Validierungen</description>
     <packaging>pom</packaging>
 
 	<properties>

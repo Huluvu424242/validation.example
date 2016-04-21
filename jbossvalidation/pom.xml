@@ -10,7 +10,7 @@
 	</parent>
 	<artifactId>jbossvalidation</artifactId>
 	<name>JBoss Validation Example</name>
-	<description>Einfache Algorithmen mit simplen Beispielen</description>
+	<description>Beispiele zur Validierung mittels JBoss Hibernate framework</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
