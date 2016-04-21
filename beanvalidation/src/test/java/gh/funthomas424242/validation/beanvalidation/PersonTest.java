@@ -2,6 +2,7 @@ package gh.funthomas424242.validation.beanvalidation;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.Iterator;
 import java.util.Set;
 
 import javax.validation.ConstraintViolation;
@@ -31,8 +32,10 @@ public class PersonTest {
 				.validate(person);
 
 		assertEquals(2, constraintViolations.size());
-		assertEquals("darf nicht null sein",
-				constraintViolations.iterator().next().getMessage());
+		final Iterator<ConstraintViolation<Person>> it = constraintViolations
+				.iterator();
+		assertEquals("vorname", it.next().getPropertyPath().toString());
+		assertEquals("name", it.next().getPropertyPath().toString());
 	}
 
 	@Test
