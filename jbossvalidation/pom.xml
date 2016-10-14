@@ -53,19 +53,8 @@
 			<version>1.6.4</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>de.gmorling</groupId>
-			<artifactId>script-assert</artifactId>
-			<version>0.2</version>
-		</dependency>
-
 	</dependencies>
-	<repositories>
-		<repository>
-			<id>http://gunnarmorling-maven-repo.googlecode.com/svn/repo/</id>
-			<url>http://gunnarmorling-maven-repo.googlecode.com/svn/repo/</url>
-		</repository>
-	</repositories>
+	
 	<build>
 		<plugins>
 			<plugin>
