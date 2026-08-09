@@ -2,7 +2,7 @@ package gh.funthomas424242.validation.beanvalidation;
 
 import java.util.Date;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 public class Person {
 
