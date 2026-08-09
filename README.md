@@ -1,8 +1,21 @@
 # validation.example
 Projekt mit Beispielen zu Validation Frameworks wie das Bean-Validation oder checkerframework.
 
-[![Build Status](https://travis-ci.org/FunThomas424242/validation.example.svg?branch=master)](https://travis-ci.org/FunThomas424242/validation.example)
-[![codecov](https://codecov.io/gh/FunThomas424242/validation.example/branch/master/graph/badge.svg)](https://codecov.io/gh/FunThomas424242/validation.example)
+[![Maven CI](https://github.com/Huluvu424242/validation.example/actions/workflows/maven.yml/badge.svg)](https://github.com/Huluvu424242/validation.example/actions/workflows/maven.yml)
+
+Das Projekt wird mit Java 17 gebaut. Die drei Module behalten bewusst
+unterschiedliche Aufgaben und, wo fachlich notwendig, unterschiedliche
+Framework-Generationen:
+
+* `beanvalidation` demonstriert aktuelle Jakarta Bean Validation zur Laufzeit.
+* `checkerframework` demonstriert statische Nullness- und Regex-Prüfungen beim
+  Kompilieren.
+* `jbossvalidation` bewahrt das Hibernate-spezifische `@ScriptAssert`-Beispiel.
+  Dafür bleibt dieses Modul auf der letzten `javax.validation`-Generation von
+  Hibernate Validator, da die Constraint in der Jakarta-Generation entfernt
+  wurde.
+
+Ein vollständiger Semantik-Check läuft mit `mvn clean verify`.
 
 
 ## JBoss Validation
